@@ -56,11 +56,11 @@ async def text(bot, update):
             [
                 [
                     InlineKeyboardButton('📫CHANNEL', url='https://t.me/VKPROJECTS'),
-                    InlineKeyboardButton('📍ABOUT ME', callback_data='about')
+                    InlineKeyboardButton('👥GROUP', url='https://t.me/VKP_BOTS')
                 ],
                 [
-                    InlineKeyboardButton('HOW TO USE ?🤔', callback_data="help"),
-                    InlineKeyboardButton('👥GRPUP', url='https://t.me/VKP_BOTS')
+                    InlineKeyboardButton('HOW TO USE🤔', url='https://t.me/Renamer_ProBot?start=help'),
+                    InlineKeyboardButton('📍ABOUT ME', url='https://t.me/Renamer_ProBot?start=about')
                 ]
             ]
         ),
