@@ -55,12 +55,8 @@ async def text(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('📫CHANNEL', url='https://t.me/VKPROJECTS'),
-                    InlineKeyboardButton('👥GROUP', url='https://t.me/VKP_BOTS')
-                ],
-                [
-                    InlineKeyboardButton('HOW TO USE🤔', url='https://t.me/Renamer_ProBot?start=help'),
-                    InlineKeyboardButton('📍ABOUT ME', url='https://t.me/Renamer_ProBot?start=about')
+                    InlineKeyboardButton('⚙ CHANNEL ⚙', url='https://t.me/VKPROJECTS'),
+                    InlineKeyboardButton('⚙ GROUP ⚙', url='https://t.me/VKP_BOTS')
                 ]
             ]
         ),
