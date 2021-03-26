@@ -1,13 +1,16 @@
 class Translation(object):
     START_TEXT = """ <b> Hi {} , I'm A Simple File Renamer+File To Video Converter Bot With Permanent Thumbnail support!💯</b> \n
 
-<b>Bot Created By: @VKPROJECTS </b> \n 
+<b>Reply to that message with</b> <code>/rename New file name.extnsion</code>
+
 <b> I Can Also Download/Upload Files From Zee5</b> \n
 <b>Do /help for more Details ...</b> \n
+
+❤ Made By @VKPROJECTS
 """
 
     RENAME_403_ERR = "What Are You Doing? Bruuh!!"
-    BANNED_USER_TEXT = "Sorry!! But Mai Owner As Banned You From Using This Service. That Means You Can't Run Meh Now! \n \n Contact : @No_OnE_Kn0wS_Me For more Details.. " 
+    BANNED_USER_TEXT = "Sorry!! But Mai Owner As Banned You From Using This Service. That Means You Can't Run Meh Now! \n \n Contact : @VKP_BOTS For more Details.. " 
     ABS_TEXT = "What Are You Trying To Do,Mate?"
     UPGRADE_TEXT = "CONTACT @VkBotsSupportBot "
     DOWNLOAD_START = "<b>Downloading To My server !! pls Wait</b>"
