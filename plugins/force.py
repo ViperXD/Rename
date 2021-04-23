@@ -55,8 +55,8 @@ async def text(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚙ CHANNEL ⚙', url='https://t.me/VKPROJECTS'),
-                    InlineKeyboardButton('⚙ GROUP ⚙', url='https://t.me/VKP_BOTS')
+                    InlineKeyboardButton('⚙️Group⚙️', url='https://t.ME/VKP_BOTS'),
+                    InlineKeyboardButton('⚙️Channel⚙️', url='https://t.me/VKPROJECTS')
                 ]
             ]
         ),
