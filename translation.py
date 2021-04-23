@@ -1,12 +1,10 @@
 class Translation(object):
-    START_TEXT = """ <b> Hi {} , I'm A Simple File Renamer+File To Video Converter Bot With Permanent Thumbnail support!💯</b> \n
+    START_TEXT = """ <b>Hai {}!!!.
+Iam Simple Rename Bot!😌</b>
 
-<b>Reply to that message with</b> <code>/rename New file name.extnsion</code>
+<code>You can rename any Telegram Document, using this bot! With Permenant Thumbnail</code>
 
-<b> I Can Also Download/Upload Files From Zee5</b> \n
-<b>Do /help for more Details ...</b> \n
-
-❤ Made By @VKPROJECTS
+<b>» You Must Join My Updates Channel for using me</b>
 """
 
     RENAME_403_ERR = "What Are You Doing? Bruuh!!"
