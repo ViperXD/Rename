@@ -42,4 +42,7 @@ Iam Simple Rename Bot!😌</b>
 3.<b> Send A Photo to make it as permanent Thumbnail</b> \n
 4.<b> I Can Also Convert Files Into Video through /c2v Command </b>   \n
 5.<b> Send Me Any Zee5 Url And I'll Upload It Into Telegram </b> \n \n <b>❤ Made With Love By: @VKPROJECTS </b>"""
-
+    DONATE_TEXT = """<b>Thanks for showing interest in donation</b>
+    
+To donate and support me you can send <b>any amount</b> as you wish 😇 
+Payment Options"""
