@@ -36,8 +36,17 @@ from hachoir.parser import createParser
 from PIL import Image
 from database.database import *
 
+async def force_name(bot, message):
 
-@Client.on_message(filters.private & filters.reply & filters.text)
+    await bot.send_message(
+        message.reply_to_message.from_user.id,
+        "Enter new name for media\n\nNote : Extension not required",
+        reply_to_message_id=message.reply_to_message.message_id,
+        reply_markup=ForceReply(True)
+    )
+
+
+@pyrogram.on_message(filters.private & filters.reply & filters.text)
 async def cus_name(bot, message):
     if update.from_user.id in Config.BANNED_USERS:
         await update.reply_text("You are B A N N E D")
