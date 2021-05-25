@@ -45,21 +45,18 @@ async def text(bot, update):
             #await update.reply_text(f"Join @{update_channel} To Use Me")
             await update.reply_text(
                 text="**Please Join My Update Channel Before Using Me..**",
-                reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text="Join My Updates Channel", url=f"https://t.me/{update_channel}")]
-              ])
-            )
-            return
-        else:
-            await update.reply_text(Translation.START_TEXT.format(update.from_user.first_name),
-        reply_markup=InlineKeyboardMarkup(
-            [
+                reply_markup=InlineKeyboardMarkup(
                 [
-                    InlineKeyboardButton('⚙️Group⚙️', url='https://t.ME/VKP_BOTS'),
-                    InlineKeyboardButton('⚙️Channel⚙️', url='https://t.me/VKPROJECTS')
+                    [
+                        InlineKeyboardButton("HELP", callback_data="help_data"),
+                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")
+                    ]
                 ]
-            ]
-        ),
-        reply_to_message_id=update.message_id
-    )
+            ),
+            reply_to_message_id=message.message_id
+        )
             return 
