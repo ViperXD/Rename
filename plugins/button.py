@@ -9,6 +9,28 @@ async def formatbuttons(bot, update):
     if "|" in update.data:
         await zee5_execute(bot, update)
 
+    elif query.data == "start_data":
+        await query.answer()
+        keyboard = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "Channel", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
+                ],
+                [
+                    InlineKeyboardButton("🤔Help", callback_data="help_data"),
+                    InlineKeyboardButton("About🤖", callback_data="about_data"),
+                ]                
+            ]
+        )
+
+        await query.message.edit_text(
+            Script.HELP_MSG,
+            reply_markup=keyboard,
+            disable_web_page_preview=True
+        )
+        return
+
     elif query.data == "help_data":
         await query.answer()
         keyboard = InlineKeyboardMarkup(
