@@ -14,12 +14,8 @@ async def formatbuttons(bot, update):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("", url="https://youtu.be/hkmc3e7U7R4"),
-                    InlineKeyboardButton("About Me", callback_data="about_data")
-                ],
-                [
-                    InlineKeyboardButton("BOT Channel", url="https://t.me/TroJanzHEX"),
-                    InlineKeyboardButton("Support Group", url="https://t.me/TroJanzSupport")
+                    InlineKeyboardButton('🏠Home', callback_data='start_data'),
+                    InlineKeyboardButton('About🤖', callback_data='about_data'')
                 ]
             ]
         )
@@ -36,15 +32,11 @@ async def formatbuttons(bot, update):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "SOURCE CODE", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
-                ],
-                [
-                    InlineKeyboardButton("BACK", callback_data="help_data"),
-                    InlineKeyboardButton("CLOSE", callback_data="close_data"),
-                ]                
+                    InlineKeyboardButton('🏃🏻‍♂️Back', callback_data='start_data'),
+                    InlineKeyboardButton('Help🤔', callback_data='help_data')
+                ]
             ]
-        )
+        ),
 
         await query.message.edit_text(
             Script.ABOUT_MSG,
