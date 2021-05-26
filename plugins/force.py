@@ -47,16 +47,16 @@ async def text(bot, update):
                 text="**Please Join My Update Channel Before Using Me..**",
                 reply_markup=InlineKeyboardMarkup(
                 [
-                    [
-                        InlineKeyboardButton("HELP", callback_data="help_data"),
-                        InlineKeyboardButton("ABOUT", callback_data="about_data"),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            "⭕️ JOIN OUR CHANNEL ⭕️", url="https://t.me/TroJanzHEX")
-                    ]
+                [
+                    InlineKeyboardButton("🤔Help", callback_data="help_data"),
+                    InlineKeyboardButton("🤖About", callback_data="about_data"),
+                ],
+                [
+                    InlineKeyboardButton(
+                        "Close🔒", callback_data="closeformat")
                 ]
-            ),
+            ]
+        ),
             reply_to_message_id=message.message_id
         )
             return 
