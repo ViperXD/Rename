@@ -25,7 +25,7 @@ async def formatbuttons(bot, update):
         )
 
         await query.message.edit_text(
-            Script.HELP_MSG,
+            translation.START_TEXT,
             reply_markup=keyboard,
             disable_web_page_preview=True
         )
@@ -43,7 +43,7 @@ async def formatbuttons(bot, update):
         )
 
         await query.message.edit_text(
-            Script.HELP_MSG,
+            translation.HELP_TEXT,
             reply_markup=keyboard,
             disable_web_page_preview=True
         )
@@ -61,7 +61,7 @@ async def formatbuttons(bot, update):
         ),
 
         await query.message.edit_text(
-            Script.ABOUT_MSG,
+            translation.ABOUT_TEXT,
             reply_markup=keyboard,
             disable_web_page_preview=True
         )
