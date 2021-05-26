@@ -22,7 +22,7 @@ async def formatbuttons(bot, update):
                         "Close🔒", callback_data="closeformat")
                 ]
             ]
-        ),
+        )
 
         await query.message.edit_text(
             translation.START_TEXT,
