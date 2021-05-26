@@ -14,15 +14,15 @@ async def formatbuttons(bot, update):
         keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton(
-                        "Channel", url="https://github.com/TroJanzHEX/Unlimited-Filter-Bot")
+                    InlineKeyboardButton("🤔Help", callback_data="help_data"),
+                    InlineKeyboardButton("🤖About", callback_data="about_data"),
                 ],
                 [
-                    InlineKeyboardButton("🤔Help", callback_data="help_data"),
-                    InlineKeyboardButton("About🤖", callback_data="about_data"),
-                ]                
+                    InlineKeyboardButton(
+                        "Close🔒", callback_data="closeformat")
+                ]
             ]
-        )
+        ),
 
         await query.message.edit_text(
             translation.START_TEXT,
