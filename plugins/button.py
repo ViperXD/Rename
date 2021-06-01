@@ -37,7 +37,7 @@ async def formatbuttons(bot, update):
             [
                 [
                     InlineKeyboardButton('🏠Home', callback_data='start_data'),
-                    InlineKeyboardButton('About🤖', callback_data='about_data'')
+                    InlineKeyboardButton('About🤖', callback_data='about_data')
                 ]
             ]
         )
